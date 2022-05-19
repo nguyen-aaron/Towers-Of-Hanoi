@@ -1,3 +1,4 @@
+import time
 def game():
   diskNumber = [] # create an empty list for the ideal list disk order
   stackA = [] # create left post
@@ -10,6 +11,7 @@ def game():
       for x in range (0, int(disks)):
         minimumMoves = minimumMoves*2 + 1 # calculate the minimum moves
       print("Minimum moves is",minimumMoves) # print out the minimum moves
+      time.sleep(1.5) # pause
     else:
       print("Invalid Number.") # if user input is less than 0
   except:
